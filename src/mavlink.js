@@ -180,7 +180,7 @@ mavlink.prototype.loadDefinitions = function() {
 			}
 
 			//Read the XML file and parse it when loaded
-			fs.readFile(path.join(__dirname, './mavlink/message_definitions/' + self.version + '/' + self.definitions[i] + '.xml'), function(err, data) {
+			fs.readFile(path.join(__dirname, '../mavlink/message_definitions/' + self.version + '/' + self.definitions[i] + '.xml'), function(err, data) {
 
 				//Pass XML data to the parser
 				parser.parseString(data, function (err, result) {
